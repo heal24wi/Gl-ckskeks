@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
+
+body {
+  background-color: antiquewhite;
+
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-container #the-quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(101, 67, 215);
+  font-family: "Mansalva", sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  padding: 0 10px;
+  text-align: center;
+  max-width: 90%;
+}
+
+@media (max-width: 768px) {
+  .image-container #the-quote {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container #the-quote {
+    font-size: 1.2em;
+  }
+}
+
+@keyframes rotate-once {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+img.rotate-on-load {
+  display: block;
+  margin: 0 auto; /* optional, zentriert das Bild */
+  animation: rotate-once 1s ease-in-out 1;
+  transform-origin: center;
+}
