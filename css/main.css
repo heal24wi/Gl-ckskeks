@@ -3,6 +3,7 @@
 body {
   margin: 0;
   height: 100vh;
+  background-color: #63635a;
   display: flex;
   justify-content: center;
   align-items: center;
