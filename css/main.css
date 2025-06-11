@@ -62,3 +62,17 @@ img.rotate-on-load {
   animation: rotate-once 1s ease-in-out 1;
   transform-origin: center;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #dfd6c3 !important;
+  }
+
+  .image-container #the-quote {
+    color: #6543d7 !important;
+  }
+}
+
+* {
+  color-scheme: only light;
+}
